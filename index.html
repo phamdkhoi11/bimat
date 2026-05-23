@@ -28,35 +28,14 @@
             text-align: justify;
             font-size: 18px;
             font-weight: 500;
-
-            /* ✨ Animation */
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeUp 1.2s ease forwards;
-
-            /* ✨ Đổ bóng chữ */
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
         }
 
-        /* ✨ Hover nhẹ */
-        .content:hover {
-            transform: translateY(0px) scale(1.01);
-            transition: all 0.3s ease;
-        }
-
-        /* ✨ Keyframes animation */
-        @keyframes fadeUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
+        /* NÚT Ở DƯỚI */
         .next-btn {
             position: fixed;
             bottom: 20px;
             right: 20px;
-            background-color: #00c853;
+            background-color: #00c853; /* màu xanh */
             color: white;
             border: none;
             padding: 12px 18px;
@@ -68,8 +47,6 @@
 
         .next-btn:hover {
             background-color: #00b248;
-            transform: scale(1.05);
-            transition: 0.2s;
         }
     </style>
 </head>
@@ -79,10 +56,12 @@
         Trong tình yêu, nhan sắc có thể tạo nên ấn tượng ban đầu nhưng đó không phải là yếu tố quyết định một mối quan hệ có bền vững hay không, bởi điều quan trọng nhất nằm ở tính cách, cách suy nghĩ và cách một người đối xử với người khác; một người có thể không quá nổi bật về ngoại hình nhưng nếu họ biết quan tâm, biết lắng nghe, biết chia sẻ và luôn tôn trọng cảm xúc của đối phương thì vẫn có thể tạo nên một tình yêu rất đẹp và lâu dài; tình yêu không chỉ là cảm xúc nhất thời mà còn là sự đồng hành, nơi hai người cùng nhau trò chuyện, chia sẻ sở thích, thấu hiểu sự khác biệt và học cách dung hòa lẫn nhau; bên cạnh đó, cách một người đối xử với gia đình và những người xung quanh cũng phản ánh rõ con người thật của họ, vì một người sống có trách nhiệm, chân thành và tử tế thường sẽ mang lại cảm giác an toàn và đáng tin cậy; nếu phải lựa chọn một người để gắn bó, tôi sẽ không đánh giá họ qua vẻ bề ngoài vì ngoại hình chỉ là thứ nhìn thấy trong khoảnh khắc còn giá trị bên trong mới là thứ theo ta lâu dài, tôi sẽ chọn người có suy nghĩ trưởng thành, biết cố gắng, biết sửa sai và sẵn sàng cùng nhau phát triển; hơn nữa, tình yêu cũng không bị giới hạn bởi tuổi tác, việc hơn nhau bao nhiêu tuổi không quan trọng bằng việc cả hai có đủ chín chắn để hiểu nhau, tôn trọng nhau và cùng hướng về tương lai hay không; một mối quan hệ đúng đắn không phải là mối quan hệ hoàn hảo mà là nơi cả hai chấp nhận khuyết điểm của nhau, cùng nhau vượt qua khó khăn và luôn cố gắng vì nhau mỗi ngày, bởi cuối cùng tình yêu đẹp không nằm ở việc hai người trông có hợp nhau đến đâu mà nằm ở việc họ có thật sự hiểu, trân trọng và muốn đi cùng nhau lâu dài hay không.
     </div>
 
+    <!-- NÚT CHUYỂN TRANG -->
     <button class="next-btn" onclick="nextPage()">Trang tiếp →</button>
 
     <script>
         function nextPage() {
+            // đổi link ở đây nếu ông có trang khác
             window.location.href = "page2.html";
         }
     </script>
